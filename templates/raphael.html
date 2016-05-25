@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="../static/images/DisappNinja.css">
+    <img type="text/javascript" src='{{ url_for('static', filename='images/raphael.jpg') }}'>
+    </head>
+
+    <body>
+
+      <title>No ninjas here</title>
+
+   	 	<form action='/' method='GET'>
+    	<input type="hidden" name="turtles" value="noninjas">
+    	<input type="submit" name="turtles" value="show noninjas">
+    	</form>
+
+    	<form action='/ninja' method='GET'>
+    	<input type="hidden" name="turtles" value="allninjas">
+        <input type="submit" name="turtles" value="show allninjas">
+        </form>
+
+        <form action='/ninja/blue' method='GET'>
+    	<input type="hidden" name="turtles" value="leonardo">
+    	<input type="submit" name="turtles" value="show leonardo">
+    	</form>
+
+    	<form action='/ninja/orange' method='GET'>
+    	<input type="hidden" name="turtles" value="michelangelo">
+    	<input type="submit" name="turtles" value="show michelangelo">
+    	</form>
+
+    	<form action='/ninja/red' method='GET'>
+    	<input type="hidden" name="turtles" value="raphael">
+    	<input type="submit" name="turtles" value="show raphael">
+    	</form>
+
+    	<form action='/ninja/purple' method='GET'>
+    	<input type="hidden" name="turtles" value="donatello">
+    	<input type="submit" name="turtles" value="show donatello">
+    	</form>
+
+    	<form action='/ninja/black' method='GET'>
+        <input type="hidden" name="turtles" value="notapril">
+        <input type="submit" name="turtles" value="show notapril">
+        </form>
+
+    </body>
+</html>
